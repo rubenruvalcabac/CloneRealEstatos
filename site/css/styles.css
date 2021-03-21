@@ -64,3 +64,82 @@ body {
     min-height: 513px;
   }
 }
+
+/* content-section */
+.content-section {
+  padding: 96px 48px 0px 48px;
+  animation: fadeIn;
+}
+
+.content-section .caption {
+  color: #f2ab66;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.content-section .text-lead {
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: rgb(82, 81, 81);
+}
+
+.collection-list {
+  width: 100%;
+}
+
+.list {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 497px;
+  grid-column-gap: 3rem;
+}
+
+.list-item {
+}
+
+.list-item img {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.list-item-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-item-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.list-item-address {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 1.1rem;
+
+  color: #0069b4;
+}
+
+.price {
+  color: #f2ab66;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.list-item-properties {
+  margin-top: 1.5rem;
+}
+.list-item-properties div {
+  font-size: 1.2rem;
+  border-top: 1px #555 dotted;
+  height: 2.2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .content-section {
+    padding: 6rem 3rem 0rem 3rem;
+  }
+}

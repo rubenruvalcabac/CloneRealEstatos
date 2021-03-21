@@ -49,3 +49,18 @@ body {
   font-size: 3rem;
   line-height: 3rem;
 }
+.content-hero-image {
+  padding-top: 6rem;
+  padding-left: 3rem;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+
+@media screen and (max-width: 991px) {
+  .content-hero-image {
+    height: auto;
+    min-height: 513px;
+  }
+}

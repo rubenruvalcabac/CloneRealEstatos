@@ -209,6 +209,7 @@ Layout
 
 .navbar__overlay-close-button {
   background-image: url("https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e636f6fc21fd67d24f78a9e_close-24px.svg");
+  background-repeat: no-repeat;
   height: 24px;
   width: 24px;
 }
@@ -218,6 +219,28 @@ Layout
   height: 100vw;
   background-image: url("https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c7c2191f2adb0612b6bf_real-estate-template-about-02.jpg");
   background-position: center;
+}
+
+.navbar__overlay-menu {
+  display: grid;
+  grid-template-rows: 30rem auto;
+}
+
+.navbar__nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+}
+
+.navbar__nav-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-selected {
+  color: var(--color-accent);
 }
 
 @media screen and (min-width: 767px) {

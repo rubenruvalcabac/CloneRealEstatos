@@ -15,6 +15,44 @@
       href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Manrope:wght@300;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="navbar">
+      <div class="navbar__container container">
+        <a
+          class="navbar__button"
+          id="navbar__button"
+          href="#"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <div id="navbar__overlay" class="navbar__overlay">
+          <nav class="navbar__overlay-content">
+            <ul>
+              <li><a href="#1">One</a></li>
+              <li><a href="#2">Two</a></li>
+              <li>
+                <a href="#3">Three</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="navbar__brand">
+          <img
+            src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e66480f1a010f81156efae8_realestate.svg"
+            alt="Real Estate Logo"
+          />
+        </div>
+        <div class="navbar__social"></div>
+      </div>
+    </div>
+
+    <script src="./js/navbar.js"></script>
+  </body>
 </html>

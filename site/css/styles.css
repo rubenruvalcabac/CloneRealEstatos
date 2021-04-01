@@ -134,3 +134,39 @@ Layout
     width: 24px;
   }
 }
+
+/* 
+ NavBar
+ */
+
+.navbar__button {
+  display: block;
+  width: 96px;
+  height: 94px;
+  background-color: var(--color-button-face);
+  font-size: 2.5rem;
+}
+
+.navbar__overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: var(--color-primary);
+  overflow-x: hidden;
+  transition: 0.2s;
+}
+
+.navbar__overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.navbar__overlay a {
+  color: var(--color-contrast);
+}

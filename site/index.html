@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
     <title>Real Estatos - Clone</title>
 
     <link rel="stylesheet" href="css/normalize.css" />
@@ -17,33 +20,43 @@
     />
   </head>
   <body>
-    <div class="navbar">
-      <div class="navbar__menu"></div>
-      <div class="navbar__brand">
-        <a href="/">
-          <img
-            class="navbar__brand-logo"
-            src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e66480f1a010f81156efae8_realestate.svg"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="navbar__social">
-        <a href="https://twitter.com/home?lang=es">
-          <img
-            src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e679df79e2b51feb2e5ede2_iconmonstr-twitter-1.svg"
-            alt="Twitter logo"
-        /></a>
-        <a href="https://facebook.com">
-          <img
-            src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e679e44592da740abfb11bb_iconmonstr-facebook-1.svg"
-            alt="Twitter logo"
-        /></a>
-        <a href="https://linkedin.com"
-          ><img
-            src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e679e3b9e2b51043ce5ef05_iconmonstr-linkedin-1.svg"
-            alt=""
-        /></a>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar__menu" onclick="openNav()"></div>
+        <div id="navbar__overlay" class="navbar__overlay">
+          <div class="navbar__overlay-content">
+            <div
+              class="navbar__overlay-close-button"
+              onclick="closeNav()"
+            ></div>
+          </div>
+        </div>
+        <div class="navbar__brand">
+          <a href="/">
+            <img
+              class="navbar__brand-logo"
+              src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e66480f1a010f81156efae8_realestate.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="navbar__social">
+          <a href="https://twitter.com/home?lang=es">
+            <img
+              src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e679df79e2b51feb2e5ede2_iconmonstr-twitter-1.svg"
+              alt="Twitter logo"
+          /></a>
+          <a href="https://facebook.com">
+            <img
+              src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e679e44592da740abfb11bb_iconmonstr-facebook-1.svg"
+              alt="Twitter logo"
+          /></a>
+          <a href="https://linkedin.com"
+            ><img
+              src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e679e3b9e2b51043ce5ef05_iconmonstr-linkedin-1.svg"
+              alt=""
+          /></a>
+        </div>
       </div>
       <!-- <div class="navbar__container container">
         <a

@@ -198,13 +198,13 @@ Layout
   background-color: var(--color-primary);
   overflow-x: hidden;
   transition: 0.2s;
+  display: grid;
+  grid-template-columns: auto 0;
 }
 
 .navbar__overlay-content {
   margin: 2rem;
   color: #fff;
-  display: grid;
-  grid-template-columns: auto 1fr;
 }
 
 .navbar__overlay-close-button {
@@ -232,6 +232,8 @@ Layout
   }
   .navbar__overlay-content {
     margin: 6rem;
+  }
+  .navbar__overlay {
     grid-template-columns: auto 347px;
   }
 }

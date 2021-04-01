@@ -3,6 +3,7 @@
   --color-secondary: #0069b4;
   --color-accent: #f2ab66;
   --color-button-face: #f2f5f7;
+  --color-contrast: #fff;
 }
 
 *,
@@ -52,4 +53,68 @@ p {
   h2 {
     font-size: 3rem;
   }
+}
+/* 
+ Links
+ */
+a {
+  text-decoration-style: dotted;
+}
+
+/* 
+Layout
+*/
+
+.block {
+  width: 100%;
+  margin: 0;
+}
+
+.block--dark {
+  background-color: var(--color-primary);
+  color: var(--color-contrast);
+}
+
+.block--dark a:link {
+  color: var(--color-contrast);
+  text-decoration-color: rgb(215, 215, 215);
+}
+.block--dark a:visited {
+  color: var(--color-contrast);
+  text-decoration-color: rgb(215, 215, 215);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* 
+ Components
+ */
+
+/* Cookies */
+.cookies {
+  padding: 1.6rem;
+  font-size: 1.2rem;
+}
+
+.cookies__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cookies__content > a {
+}
+
+.cookies__closeButton {
+  margin: 0 1rem;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+.cookies__closeButton > img {
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 10px;
 }

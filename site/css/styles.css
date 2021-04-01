@@ -139,12 +139,89 @@ Layout
  NavBar
  */
 
+.navbar {
+  background-color: yellow;
+  display: flex;
+  height: 64px;
+  position: sticky;
+}
+
+.navbar__menu {
+  background-image: url("https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e69324c7de02faa0b923622_menu-24px.svg");
+  background-color: var(--color-button-face);
+  background-size: 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 96px;
+  min-width: 96px;
+}
+.navbar__brand {
+  width: 100%;
+  text-align: right;
+}
+.navbar__brand-logo {
+  width: 128px;
+  height: 100%;
+  margin: 0 1rem;
+  background: yellowgreen;
+}
+
+.navbar__social {
+  background: var(--color-accent);
+  display: flex;
+  align-items: center;
+
+  max-width: 0;
+}
+
+.navbar__social a {
+  width: 32px;
+  height: 32px;
+  align-self: middle;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 14px;
+  background: var(--color-button-face);
+  margin: 0 0.2rem;
+}
+.navbar__social img {
+  width: 12px;
+  height: 12px;
+}
+
+@media screen and (min-width: 767px) {
+  .navbar__social {
+    max-width: 100%;
+  }
+}
+
+/*
+.navbar__button {
+  display: block;
+  width: 96px;
+  height: 94px;
+  background-color: var(--color-button-face);
+  text-align: center;
+  font-size: 2.5rem;
+}
+
 .navbar__button {
   display: block;
   width: 96px;
   height: 94px;
   background-color: var(--color-button-face);
   font-size: 2.5rem;
+  text-align: center;
+}
+
+.navbar__button > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar__grid {
+  display: grid;
 }
 
 .navbar__overlay {
@@ -160,13 +237,10 @@ Layout
 }
 
 .navbar__overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  margin: 2rem;
 }
 
 .navbar__overlay a {
   color: var(--color-contrast);
 }
+*/

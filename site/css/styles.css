@@ -104,17 +104,29 @@ Layout
   justify-content: space-between;
 }
 
-.cookies__content > a {
-}
-
 .cookies__closeButton {
-  margin: 0 1rem;
-  width: 20px;
-  height: 20px;
+  align-content: center;
   align-self: center;
+  background-color: #fff;
+  border-radius: 9px;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  margin-left: 1.5rem;
+  padding: 4px;
+  width: 28px;
 }
 .cookies__closeButton > img {
-  background-color: #fff;
-  padding: 6px;
-  border-radius: 10px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+@media screen and (min-width: 767px) {
+  .cookies {
+    font-size: 1.6rem;
+    padding: 2rem;
+  }
+  .cookies__closeButton {
+    width: 24px;
+  }
 }

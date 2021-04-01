@@ -203,12 +203,21 @@ Layout
 .navbar__overlay-content {
   margin: 2rem;
   color: #fff;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .navbar__overlay-close-button {
   background-image: url("https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e636f6fc21fd67d24f78a9e_close-24px.svg");
   height: 24px;
   width: 24px;
+}
+
+.navbar__overlay-banner {
+  width: 347px;
+  height: 100vw;
+  background-image: url("https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c7c2191f2adb0612b6bf_real-estate-template-about-02.jpg");
+  background-position: center;
 }
 
 @media screen and (min-width: 767px) {
@@ -223,6 +232,7 @@ Layout
   }
   .navbar__overlay-content {
     margin: 6rem;
+    grid-template-columns: auto 347px;
   }
 }
 

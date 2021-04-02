@@ -150,10 +150,18 @@ ul {
 @media screen and (min-width: 768px) {
   .block-hero {
     padding-left: 15rem;
-    padding-right: 6rem;
+    padding-right: 0;
     padding-top: 4rem;
     font-size: 2.6rem;
     line-height: 3.9rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    align-items: center;
+    column-gap: 5rem;
+  }
+
+  .block-hero__content {
+    padding-left: 15rem;
   }
 
   .block-hero__image {

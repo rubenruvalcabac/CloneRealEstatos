@@ -492,7 +492,8 @@ Button
 
 .areas__content {
   background-image: linear-gradient(135deg, rgb(0, 48, 94), rgb(0, 105, 180));
-  padding: 0.5rem 1.2rem;
+  padding: 2rem;
+  padding-top: 0;
 }
 
 .areas__content h2 {
@@ -506,7 +507,34 @@ Button
 
 .areas__content-cards {
   display: grid;
+  gap: 0.3rem;
+  padding-top: 1rem;
 }
+
+@media screen and (min-width: 767px) {
+  .areas {
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto;
+  }
+
+  .areas__img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .areas__content {
+    padding: 5rem;
+    padding-top: 2rem;
+  }
+
+  .areas__content-cards {
+    padding-top: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*
+ Card
+ */
 
 .card {
   background-color: #fff;

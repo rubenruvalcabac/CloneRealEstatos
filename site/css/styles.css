@@ -1,6 +1,6 @@
 :root {
   --color-primary: #053659;
-  --color-primary-dark: #021828;
+  --color-primary-dark: #032741;
   --color-secondary: #0069b4;
   --color-accent: #f2ab66;
   --color-button-face: #f2f5f7;
@@ -236,14 +236,15 @@ Layout
 
 .navbar__overlay-banner {
   width: 347px;
-  height: 100vw;
+  height: 100vh;
   background-image: url("https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c7c2191f2adb0612b6bf_real-estate-template-about-02.jpg");
   background-position: center;
 }
 
 .navbar__overlay-menu {
   display: grid;
-  grid-template-rows: 27rem auto;
+  height: 100%;
+  grid-template-rows: 1fr auto;
 }
 
 .navbar__nav ul {
@@ -257,6 +258,10 @@ Layout
 .navbar__nav-container {
   display: flex;
   flex-direction: column;
+}
+
+.navbar__overlay-blocks {
+  display: grid;
 }
 
 .navbar__overlay-block-text {
@@ -286,5 +291,15 @@ Layout
   }
   .navbar__nav-container {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .navbar__nav ul {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+  .navbar__overlay-blocks {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }

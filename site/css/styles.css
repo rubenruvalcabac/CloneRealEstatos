@@ -97,6 +97,7 @@ Layout
   text-decoration-color: rgb(215, 215, 215);
 }
 
+/* Hero */
 .block-hero {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -104,13 +105,20 @@ Layout
   font-size: 2rem;
   font-weight: 300;
   line-height: 3rem;
+  display: grid;
+  grid-template-rows: auto 320px;
 }
 
-.block-hero-image {
+.block-hero__image {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.block-hero__image-right {
   padding-left: 1.6rem;
   padding-top: 3rem;
-  width: 100%;
-  overflow: hidden;
   height: 320px;
 }
 
@@ -119,6 +127,10 @@ Layout
   width: 100%;
   height: 320px;
   object-fit: cover;
+}
+
+.block-hero__content-footer {
+  margin: 2rem 0;
 }
 
 .container {
@@ -144,16 +156,14 @@ ul {
     line-height: 3.9rem;
   }
 
-  .block-hero-image {
-    padding-left: 6rem;
-    padding-right: 1rem;
-    padding-top: 3rem;
+  .block-hero__image {
     width: 100%;
     height: 100%;
   }
-  .block-hero-image > video {
-    height: 100%;
-    width: 100%;
+  .block-hero__image-right {
+    padding-left: 20rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
   }
 }
 

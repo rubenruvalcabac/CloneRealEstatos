@@ -1,5 +1,6 @@
 :root {
   --color-primary: #053659;
+  --color-primary-dark: #021828;
   --color-secondary: #0069b4;
   --color-accent: #f2ab66;
   --color-button-face: #f2f5f7;
@@ -176,6 +177,7 @@ Layout
   width: 128px;
 }
 
+/*    social */
 .navbar__social {
   align-items: center;
   display: flex;
@@ -198,6 +200,14 @@ Layout
   width: 12px;
 }
 
+.navbar__overlay-block .navbar__social {
+  max-width: inherit;
+}
+.navbar__overlay-block .navbar__social a {
+  background-color: var(--color-primary-dark);
+}
+
+/*    overlay */
 .navbar__overlay {
   height: 100%;
   width: 0;
@@ -233,7 +243,7 @@ Layout
 
 .navbar__overlay-menu {
   display: grid;
-  grid-template-rows: 30rem auto;
+  grid-template-rows: 27rem auto;
 }
 
 .navbar__nav ul {
@@ -247,6 +257,11 @@ Layout
 .navbar__nav-container {
   display: flex;
   flex-direction: column;
+}
+
+.navbar__overlay-block-text {
+  font-size: 1.5rem;
+  line-height: 19px;
 }
 
 .nav-selected {
@@ -268,5 +283,8 @@ Layout
   }
   .navbar__overlay {
     grid-template-columns: auto 347px;
+  }
+  .navbar__nav-container {
+    flex-direction: row;
   }
 }

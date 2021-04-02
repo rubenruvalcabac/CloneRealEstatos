@@ -133,6 +133,10 @@ Layout
   margin: 2rem 0;
 }
 
+.block--face {
+  background-color: var(--color-button-face);
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -585,4 +589,32 @@ Button
 .card__footer a {
   text-decoration: none;
   color: var(--color-secondary);
+}
+
+/*
+Journal
+*/
+.journal {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.journal h2 {
+  margin: 0;
+}
+.journal .caption {
+  margin-bottom: 0;
+}
+
+.journal__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 767px) {
+  .journal h2 {
+    margin: 0;
+  }
+  .journal__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

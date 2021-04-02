@@ -101,6 +101,9 @@ Layout
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
 }
 
 .block-hero-image {
@@ -133,6 +136,8 @@ Layout
     padding-left: 15rem;
     padding-right: 6rem;
     padding-top: 4rem;
+    font-size: 2.6rem;
+    line-height: 3.9rem;
   }
 
   .block-hero-image {

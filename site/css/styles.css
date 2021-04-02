@@ -476,3 +476,30 @@ Button
   background-color: var(--color-accent);
   width: 8px;
 }
+
+/*
+ Areas 
+ */
+
+.areas {
+  display: grid;
+  grid-template-rows: 360px auto;
+}
+
+.areas__img {
+  width: 100%;
+}
+
+.areas__content {
+  background-color: var(--color-primary);
+  padding: 0.5rem 1.2rem;
+}
+
+.areas__content h2 {
+  color: var(--color-contrast);
+  margin: 0;
+}
+
+.areas__content-heading {
+  padding-bottom: 5rem;
+}

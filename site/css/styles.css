@@ -722,10 +722,20 @@ footer-contact
 .footer-contact ul {
   margin: 0;
 }
+
 .footer-contact a {
-  text-decoration: none;
   color: var(--color-primary);
 }
+
+.footer-contact__nav a,
+.footer-contact__contact a {
+  text-decoration: none;
+}
+.footer-contact__nav a:hover,
+.footer-contact__contact a:hover {
+  text-decoration: underline;
+}
+
 .footer-contact__title {
   font-size: 2.3rem;
   font-weight: 500;
@@ -743,6 +753,8 @@ footer-contact
 
 .footer-contact form {
   margin: 3rem 0;
+  display: flex;
+  align-items: end;
 }
 
 .footer-contact__input-email {
@@ -776,4 +788,31 @@ footer-contact
   margin: 2rem 0;
   font-size: 1.5rem;
   line-height: 1.7rem;
+}
+.footer-contact__disclaimer a {
+  text-decoration-style: dotted;
+}
+
+@media screen and (min-width: 767px) {
+  .footer-contact {
+    grid-template-columns: 18vw 1fr 2fr;
+    align-items: start;
+  }
+
+  .footer-contact form {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .footer-contact__input-email {
+    padding-right: 15rem;
+  }
+  .footer-contact__submit {
+    position: absolute;
+    right: 0;
+  }
+
+  .footer-contact__disclaimer {
+    margin-top: 0;
+  }
 }

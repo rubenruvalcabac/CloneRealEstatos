@@ -415,6 +415,32 @@ ul {
 }
 
 /*
+banner-description
+*/
+#banner-description {
+  margin-left: 15rem;
+}
+
+/*
+banner-video
+*/
+
+#banner-video video {
+  height: 100%;
+}
+
+@media screen and (min-width: 767px) {
+  #banner-video {
+    position: relative;
+    height: 70vh;
+    overflow: unset;
+  }
+  #banner-video video {
+    position: absolute;
+    left: -1;
+  }
+}
+/*
  Properties 
  */
 

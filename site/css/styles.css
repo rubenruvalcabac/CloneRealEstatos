@@ -732,6 +732,40 @@ footer-contact
   margin-top: 1rem;
   margin-bottom: 0.8rem;
 }
+.footer-contact__title-big {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
 .footer-contact__content {
   font-size: 2rem;
+}
+
+.footer-contact form {
+  margin: 3rem 0;
+}
+
+.footer-contact__input-email {
+  border: 0;
+  border-bottom: 1px solid var(--color-primary);
+  font-size: 2.4rem;
+  padding-bottom: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 100;
+  width: 100%;
+}
+
+.footer-contact__input-email::placeholder {
+  opacity: 0.5;
+}
+
+.footer-contact__input-email:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.footer-contact__disclaimer {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
 }

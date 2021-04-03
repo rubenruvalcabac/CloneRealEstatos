@@ -103,12 +103,12 @@ Layout
 
 /* Hero */
 .block-hero {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 3rem;
   font-size: 2rem;
   font-weight: 300;
   line-height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3rem;
 }
 
 .block-hero-grid {
@@ -117,23 +117,23 @@ Layout
 }
 
 .block-hero__image {
-  overflow: hidden;
-  object-fit: cover;
-  width: 100%;
   height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 .block-hero__image-right {
+  height: 320px;
   padding-left: 1.6rem;
   padding-top: 3rem;
-  height: 320px;
 }
 
 .block-hero-image > video {
   display: block;
-  width: 100%;
   height: 320px;
   object-fit: cover;
+  width: 100%;
 }
 
 .block-hero__content-footer {
@@ -145,8 +145,8 @@ Layout
 }
 
 .container {
-  max-width: 1140px;
   margin: 0 auto;
+  max-width: 1140px;
   position: relative;
 }
 
@@ -160,15 +160,15 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .block-hero {
+    align-items: center;
+    column-gap: 5rem;
+    font-size: 2.6rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    line-height: 3.9rem;
     padding-left: 15rem;
     padding-right: 0;
     padding-top: 4rem;
-    font-size: 2.6rem;
-    line-height: 3.9rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px;
-    align-items: center;
-    column-gap: 5rem;
   }
 
   .block-hero__content {
@@ -752,9 +752,9 @@ footer-contact
 }
 
 .footer-contact form {
-  margin: 3rem 0;
-  display: flex;
   align-items: end;
+  display: flex;
+  margin: 3rem 0;
 }
 
 .footer-contact__input-email {

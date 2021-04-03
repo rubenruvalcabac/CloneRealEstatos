@@ -206,6 +206,8 @@ ul {
   letter-spacing: 0.8px;
   z-index: 100;
 }
+@media screen and (min-width: 767px) {
+}
 
 /* Cookies */
 .cookies {
@@ -624,7 +626,8 @@ Journal
 
 .journal__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2fr);
   gap: 1rem;
 }
 
@@ -653,9 +656,21 @@ Journal
 
 @media screen and (min-width: 767px) {
   .journal h2 {
-    margin: 0;
+    font-size: 3.4rem;
   }
   .journal__grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 237px);
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
+  .journal__item-image img {
+    height: 400px;
+    width: 237px;
+    object-fit: cover;
+  }
+  .journal__item-description {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 25.2px;
   }
 }

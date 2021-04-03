@@ -417,8 +417,10 @@ ul {
 /*
 banner-description
 */
-#banner-description {
-  margin-left: 15rem;
+@media screen and (min-width: 767px) {
+  #banner-description {
+    margin-left: 15rem;
+  }
 }
 
 /*
@@ -550,22 +552,11 @@ Button
   margin-top: 6rem;
   display: grid;
   grid-template-rows: 360px auto;
-  position: relative;
-  height: 70vh;
 }
 
 .areas__img {
   height: 100%;
-  left: -160px;
-  width: 400px;
-  position: absolute;
-}
-
-.areas__content {
-  position: absolute;
-  left: 150px;
-  height: 100%;
-  width: 55vw;
+  width: 100%;
 }
 
 .areas__content {
@@ -593,15 +584,23 @@ Button
   .areas {
     grid-template-columns: 300px auto;
     grid-template-rows: auto;
+    position: relative;
+    height: 70vh;
   }
 
   .areas__img {
     object-fit: cover;
-    height: 100%;
+    left: -160px;
+    width: 400px;
+    position: absolute;
   }
   .areas__content {
     padding: 5rem;
     padding-top: 2rem;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+    width: 55vw;
   }
 
   .areas__content-cards {
@@ -824,6 +823,7 @@ footer
 .footer form {
   align-items: end;
   display: flex;
+  flex-direction: column;
   margin: 3rem 0;
 }
 

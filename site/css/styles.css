@@ -711,53 +711,53 @@ contact-careers
 }
 
 /*
-footer-contact
+footer
 */
-.footer-contact {
+.footer {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   padding-left: 2rem;
   gap: 1rem;
 }
-.footer-contact ul {
+.footer ul {
   margin: 0;
 }
 
-.footer-contact a {
+.footer a {
   color: var(--color-primary);
 }
 
-.footer-contact__nav a,
-.footer-contact__contact a {
+.footer__nav a,
+.footer__contact a {
   text-decoration: none;
 }
-.footer-contact__nav a:hover,
-.footer-contact__contact a:hover {
+.footer__nav a:hover,
+.footer__contact a:hover {
   text-decoration: underline;
 }
 
-.footer-contact__title {
+.footer__title {
   font-size: 2.3rem;
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 0.8rem;
 }
-.footer-contact__title-big {
+.footer__title-big {
   font-size: 3rem;
   font-weight: 600;
   line-height: 3.5rem;
 }
-.footer-contact__content {
+.footer__content {
   font-size: 2rem;
 }
 
-.footer-contact form {
+.footer form {
   align-items: end;
   display: flex;
   margin: 3rem 0;
 }
 
-.footer-contact__input-email {
+.footer__input-email {
   border: 0;
   border-bottom: 1px solid var(--color-primary);
   font-size: 2.4rem;
@@ -767,16 +767,16 @@ footer-contact
   width: 100%;
 }
 
-.footer-contact__input-email::placeholder {
+.footer__input-email::placeholder {
   opacity: 0.5;
 }
 
-.footer-contact__input-email:focus {
+.footer__input-email:focus {
   outline: none;
   border-bottom: 1px solid var(--color-accent);
 }
 
-.footer-contact__submit {
+.footer__submit {
   border: none;
   background-color: rgba(0, 0, 0, 0);
   color: var(--color-accent);
@@ -784,35 +784,35 @@ footer-contact
   font-weight: 300;
 }
 
-.footer-contact__disclaimer {
+.footer__disclaimer {
   margin: 2rem 0;
   font-size: 1.5rem;
   line-height: 1.7rem;
 }
-.footer-contact__disclaimer a {
+.footer__disclaimer a {
   text-decoration-style: dotted;
 }
 
 @media screen and (min-width: 767px) {
-  .footer-contact {
+  .footer {
     grid-template-columns: 18vw 1fr 2fr;
     align-items: start;
   }
 
-  .footer-contact form {
+  .footer form {
     position: relative;
     margin-bottom: 0;
   }
 
-  .footer-contact__input-email {
+  .footer__input-email {
     padding-right: 15rem;
   }
-  .footer-contact__submit {
+  .footer__submit {
     position: absolute;
     right: 0;
   }
 
-  .footer-contact__disclaimer {
+  .footer__disclaimer {
     margin-top: 0;
   }
 }

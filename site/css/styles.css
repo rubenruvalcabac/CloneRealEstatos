@@ -709,3 +709,29 @@ contact-careers
     background-color: var(--color-button-face);
   }
 }
+
+/*
+footer-contact
+*/
+.footer-contact {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding-left: 2rem;
+  gap: 1rem;
+}
+.footer-contact ul {
+  margin: 0;
+}
+.footer-contact a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+.footer-contact__title {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+.footer-contact__content {
+  font-size: 2rem;
+}

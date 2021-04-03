@@ -8,7 +8,9 @@ function closeNav() {
 
 function initNavbarScrollHide() {
   // Looks for the hider element, when this hider element is scrolled out, the navbar will be unsticky
-  const hiderElement = document.getElementById("navbar__scroll-hide");
+  const hiderElement = document.getElementsByClassName(
+    "navbar__scroll-hide"
+  )[0];
   if (!hiderElement) return;
 
   const navBarElement = document.getElementById("navbar");

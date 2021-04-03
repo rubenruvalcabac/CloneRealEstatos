@@ -10,8 +10,7 @@
     <title>Real Estatos - Clone</title>
 
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/styles.css" />    
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -20,56 +19,459 @@
     />
   </head>
   <body>
-    <div class="container"></div>
-
-    <div class="block block-hero block-hero-grid footer">
-      <div>
-        <div class="footer__title">Menu</div>
-        <nav class="footer__content footer__nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Team Member</a></li>
-            <li><a href="#">Properties</a></li>
-            <li><a href="#">Property Areas</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Journal</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">PrivacyPolicy</a></li>
-          </ul>
-        </nav>
+    <div class="container">
+      <div id="cookies" class="block block--dark cookies">
+        <div class="container cookies__container">
+          <div class="cookies__content">
+            We utilise functional cookies to enhance your visit. Please read
+            more
+            <a href="/cookies-policy.html">here</a>.
+          </div>
+          <a href="/" id="cookies__closeButton" class="cookies__closeButton">
+            <img
+              src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63a5fe191f2a1d6f11e279_close-24px.svg"
+              alt="Cookie's notify close button"
+          /></a>
+        </div>
       </div>
-      <div>
-        <div class="footer__title">Contact</div>
-        <div class="footer__content footer__contact">
-          <p>111-222 Dummy Road <br />City E3 4PB</p>
-          <p>
-            <span class="color-accent">T. </span>+44(0) 12 3456 78 <br />
-            <span class="color-accent">E. </span
-            ><a href="mailto:info@template.com">info@template.com</a>
+
+        <div id="navbar" class="navbar" >
+          <div class="navbar__menu" onclick="openNav()"></div>
+          <div id="navbar__overlay" class="navbar__overlay">
+            <div class="navbar__overlay-content">
+              <div class="navbar__overlay-menu">
+                <div
+                  class="navbar__overlay-close-button"
+                  onclick="closeNav()"
+                ></div>
+                <div class="navbar__nav-container">
+                  <nav class="navbar__nav">
+                    <ul>
+                      <li class="nav-selected"><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Properties</a></li>
+                      <li><a href="#">Journal</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </nav>
+                  <div class="navbar__overlay-blocks">
+                    <div class="navbar__overlay-block">
+                      <div class="caption">Contact Us</div>
+                      <div class="navbar__overlay-block-text">
+                        <p>111-222 Dummy Road <br />City E3 4PB</p>
+                        <p>
+                          +44 (0) 123456 789 <br />
+                          info@template.com
+                        </p>
+                      </div>
+                    </div>
+                    <div class="navbar__overlay-block">
+                      <div class="caption">Follow us</div>
+                      <div class="navbar__social">
+                        <a href="https://twitter.com/home?lang=es">
+                          <img
+                            src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e636f6fc21fd679e0f78b15_twitter-white.svg"
+                            alt="Twitter logo"
+                        /></a>
+                        <a href="https://facebook.com">
+                          <img
+                            src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e693321afd7963fbae99717_icon-facebook.svg"
+                            alt="Twitter logo"
+                        /></a>
+                        <a href="https://linkedin.com"
+                          ><img
+                            src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e693315428ef8f2c75f8e30_icon-linkedin.svg"
+                            alt=""
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navbar__overlay-banner"></div>
+          </div>
+          <div class="navbar__brand">
+            <a href="/">
+              <img
+                class="navbar__brand-logo"
+                src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e66480f1a010f81156efae8_realestate.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="navbar__social">
+            <a href="https://twitter.com/home?lang=es">
+              <img
+                src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e679df79e2b51feb2e5ede2_iconmonstr-twitter-1.svg"
+                alt="Twitter logo"
+            /></a>
+            <a href="https://facebook.com">
+              <img
+                src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e679e44592da740abfb11bb_iconmonstr-facebook-1.svg"
+                alt="Twitter logo"
+            /></a>
+            <a href="https://linkedin.com"
+              ><img
+                src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e679e3b9e2b51043ce5ef05_iconmonstr-linkedin-1.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+    
+
+      <div class="block block-hero">
+        <h1>We're estate agents <br />in London.</h1>
+      </div>
+
+      <div  class="block block-hero__image block-hero__image-right">
+        <video
+          autoplay
+          loop
+            src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63a2c2b6815fddfe21faaf_real-estate-2-transcode.mp4"
+          
+        </video>
+      </div>
+
+      <div id="navbar__scroll-hide" class="block block-hero">
+        <div class="caption">About Us</div>
+        <div>
+          Real estatos means remarkable, and remarkable is who we strive to be―in
+          everything we do. From the incredible location of our properties, to the
+          spacious comfort of our serviced apartments. From the dedicated people we
+          hire and partner with, to the impeccable service we provide our guests.
+        </div>
+      </div>
+
+      <div class="block block-hero">
+        <div class="caption">Latest Properties</div>
+        <div class="properties">
+          <div class="properties-grid">
+            <div class="property">
+              <div class="badge-container property__image">
+                <img
+                  src="https://assets.website-files.com/5e636f6fc21fd612d0f78a85/5e678d47538a1c933d90fed9_real-estate-template-property-thumb-05.jpg"
+                  alt=""
+                />
+                <div class="badge property__image-badge">Apartment</div>
+              </div>
+              <div class="property__generals">
+                <div class="property__title">The Taproom, Woodhams Brewery</div>
+                <div class="property__location">Deptford, London</div>
+                <div class="property__price">£3,100 pcm pcm</div>
+              </div>
+              <div class="property__specs">
+                <ul>
+                  <li>2 bathrooms</li>
+                  <li>2 bedrooms</li>
+                  <li>314 sq ft</li>
+                </ul>
+              </div>
+            </div>
+            <div class="property">
+              <div class="badge-container property__image">
+                <img
+                  src="https://assets.website-files.com/5e636f6fc21fd612d0f78a85/5e679081b4e3969373cafe13_real-estate-template-property-thumb-08.jpg"
+                  alt=""
+                />
+                <div class="badge property__image-badge">House</div>
+              </div>
+              <div class="property__generals">
+                <div class="property__title">New townhouse in Kentish Town</div>
+                <div class="property__location">Kenthish Town, London</div>
+                <div class="property__price">£1,475 pcm pcm</div>
+              </div>
+              <div class="property__specs">
+                <ul>
+                  <li>2 bathrooms</li>
+                  <li>3 bedrooms</li>
+                  <li>448 sq ft</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <a href="#" class="button">
+            Show all properties
+            <img
+              src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e64b479415f1edfd644fa72_1.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      
+      <div class="areas">
+        <img
+          class="areas__img"
+          src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e6389dcb6815f17ee216c2b_real-estate-template-services-02.jpg"
+          alt=""
+        />
+        <div class="areas__content">
+          <div class="areas__content-heading">
+            <div class="caption">Areas to explore</div>
+            <h2>New to London?</h2>
+          </div>
+          <div class="areas__content-cards">
+            <div class="card">
+              <div class="card__icon">
+                <img
+                  src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c5bc58df44cfcc71c6f6_arrow-right-circle.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__title">Bow</div>
+                A residential magnet within Hamlet Towers. Locals are a stone’s throw
+                from the Roman Road Market and can take their finds with them on a
+                stroll through the nearby Victoria Park.
+                <div class="card__footer">
+                  <a href="#">View all properties</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__icon">
+                <img
+                  src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c5bc58df44cfcc71c6f6_arrow-right-circle.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__title">Canary Wharf</div>
+                A beacon for London business. Canary Wharf is defined by its contemporary offices and lunchtime restaurants. The architecture alone draws crowds from across London.
+                <div class="card__footer">
+                  <a href="#">View all properties</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__icon">
+                <img
+                  src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c5bc58df44cfcc71c6f6_arrow-right-circle.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__title">Deptford</div>
+                First time buyers and professionals are spilling over from nearby Peckham in search of the next undiscovered area this side of the river.
+                <div class="card__footer">
+                  <a href="#">View all properties</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__icon">
+                <img
+                  src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c5bc58df44cfcc71c6f6_arrow-right-circle.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__title">Hackney</div>
+                There'a a reason why Hackney has the fastest and most consistently rising housing prices in London.
+                <div class="card__footer">
+                  <a href="#">View all properties</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__icon">
+                <img
+                  src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c5bc58df44cfcc71c6f6_arrow-right-circle.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__title">Kentish Town</div>
+                Kentish Town has the buzz of Camden Town, but with more attractive prices for first-time buyers.
+                <div class="card__footer">
+                  <a href="#">View all properties</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__icon">
+                <img
+                  src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c5bc58df44cfcc71c6f6_arrow-right-circle.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card__content">
+                <div class="card__title">Shoreditch</div>
+                Shoreditch is packed with culture. Bars, restaurants, coffee shops, fashion, media, and tech companies bring all kinds of people together to live, work and eat.
+                <div class="card__footer">
+                  <a href="#">View all properties</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="block block-hero block-hero-grid">
+        <div class="block-hero__content">
+          <div class="caption">About Us</div>
+          <h2>Creative from the ground up</h2>
+          <div>
+            Over the past 25 years we’ve created more than 5,000 new homes and 1.5
+            million sq ft of workspace in over 60 regeneration projects.
+          </div>
+          <div class="block-hero__content-footer">
+            <a href="#" class="button">
+              Meet our team
+              <img
+                src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e64b479415f1edfd644fa72_1.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      
+        <img
+          class="block-hero__image"
+          src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e6381b758df4400c07061ad_real-estate-template-career-p-1600.jpeg"
+          alt=""
+        />
+      </div>
+    
+      <div class="block block-hero block--face journal">
+        <div class="caption">The insider</div>
+        <h2>Journal</h2>
+      
+        <div class="journal__grid">
+          <div class="journal__item">
+            <div class="badge-container journal__item-image">
+              <div class="badge journal__item-badge">
+                <span class="color-accent">11 min</span> reading time
+              </div>
+              <img
+                src="https://assets.website-files.com/5e636f6fc21fd612d0f78a85/5e665c3b4fda92a002167063_real-estate-template-blogthumb-01.jpg"
+                alt=""
+              />
+            </div>
+            <div class="journal__item-date">March 10, 2020</div>
+            <div class="journal__item-description">
+              The Best East London Cycle Routes: A Guide
+            </div>
+          </div>
+      
+          <div class="journal__item">
+            <div class="badge-container journal__item-image">
+              <div class="badge journal__item-badge">
+                <span class="color-accent">4 min</span> reading time
+              </div>
+              <img
+                src="https://assets.website-files.com/5e636f6fc21fd612d0f78a85/5e665fa1bc2ae5a53125c80c_real-estate-template-blogthumb-02.jpg"
+                alt=""
+              />
+            </div>
+            <div class="journal__item-date">March 10, 2020</div>
+            <div class="journal__item-description">
+              Gazumping and gazundering in property: What do they mean?
+            </div>
+          </div>
+      
+          <div class="journal__item">
+            <div class="badge-container journal__item-image">
+              <div class="badge journal__item-badge">
+                <span class="color-accent">4 min</span> reading time
+              </div>
+              <img
+                src="https://assets.website-files.com/5e636f6fc21fd612d0f78a85/5e669149d339463cc3ef9d74_real-estate-template-services-p-500.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="journal__item-date">March 10, 2020</div>
+            <div class="journal__item-description">
+              Living in Canary Wharf: A Guide
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="block block-hero block-hero-grid contact-careers">
+        <div class="card">
+          <div class="card__icon">
+            <img
+              src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c5bc58df44cfcc71c6f6_arrow-right-circle.svg"
+              alt=""
+            />
+          </div>
+          <div class="card__content">
+            <div class="card__title">Contact</div>
+            There's always a starting point. We believe that a good conversation is
+            about considering your options and seeing if we can help.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__icon">
+            <img
+              src="https://assets.website-files.com/5e636f6fc21fd63aeff78a61/5e63c5bc58df44cfcc71c6f6_arrow-right-circle.svg"
+              alt=""
+            />
+          </div>
+          <div class="card__content">
+            <div class="card__title">Careers</div>
+            When you join us, you have the opportunity to be a part of a team
+            investing in what matters: our world and how we live in it.
+          </div>
+        </div>
+      </div>
+
+      <div class="block block-hero block-hero-grid footer">
+        <div>
+          <div class="footer__title">Menu</div>
+          <nav class="footer__content footer__nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team Member</a></li>
+              <li><a href="#">Properties</a></li>
+              <li><a href="#">Property Areas</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Journal</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">PrivacyPolicy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <div class="footer__title">Contact</div>
+          <div class="footer__content footer__contact">
+            <p>111-222 Dummy Road <br />City E3 4PB</p>
+            <p>
+              <span class="color-accent">T. </span>+44(0) 12 3456 78 <br />
+              <span class="color-accent">E. </span
+              ><a href="mailto:info@template.com">info@template.com</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="footer__title-big">
+            Be first in the queue! Get our latest news straight to your inbox.
+          </div>
+          <form action="">
+            <input
+              type="text"
+              class="footer__input-email"
+              placeholder="Email address"
+            />
+            <input type="button" class="footer__submit" value="Subscribe →" />
+          </form>
+          <p class="footer__disclaimer">
+            For more information, including how we use your personal details, please
+            see our <a href="#">Privacy Policy.</a>
           </p>
         </div>
       </div>
-      <div>
-        <div class="footer__title-big">
-          Be first in the queue! Get our latest news straight to your inbox.
-        </div>
-        <form action="">
-          <input
-            type="text"
-            class="footer__input-email"
-            placeholder="Email address"
-          />
-          <input type="button" class="footer__submit" value="Subscribe →" />
-        </form>
-        <p class="footer__disclaimer">
-          For more information, including how we use your personal details,
-          please see our <a href="#">Privacy Policy.</a>
-        </p>
-      </div>
+      
+      
     </div>
 
+    <script src="./js/cookies.js"></script>
     <script src="./js/navbar.js"></script>
   </body>
 </html>

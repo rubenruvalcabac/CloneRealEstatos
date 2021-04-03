@@ -543,17 +543,29 @@ Button
 }
 
 /*
- Areas 
+  areas-to-explore
  */
 
 .areas {
-  padding-top: 6rem;
+  margin-top: 6rem;
   display: grid;
   grid-template-rows: 360px auto;
+  position: relative;
+  height: 70vh;
 }
 
 .areas__img {
-  width: 100%;
+  height: 100%;
+  left: -160px;
+  width: 400px;
+  position: absolute;
+}
+
+.areas__content {
+  position: absolute;
+  left: 150px;
+  height: 100%;
+  width: 55vw;
 }
 
 .areas__content {
@@ -595,6 +607,23 @@ Button
   .areas__content-cards {
     padding-top: 3rem;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*
+our history 
+*/
+@media screen and (min-width: 767px) {
+  #our-history {
+    position: relative;
+    height: 60vh;
+  }
+
+  #our-history .block-hero__image {
+    position: absolute;
+    width: 600px;
+    height: 590px;
+    right: -300px;
   }
 }
 

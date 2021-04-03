@@ -674,3 +674,38 @@ Journal
     line-height: 25.2px;
   }
 }
+
+/*
+contact-careers
+*/
+.contact-careers {
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+}
+.contact-careers .card__title {
+  padding-bottom: 1rem;
+}
+.contact-careers .card__content {
+  font-size: 1.8rem;
+  line-height: 25px;
+}
+
+.contact-careers .card__title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.contact-careers .card {
+  background-color: var(--color-button-face);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 767px) {
+  .contact-careers .card {
+    background-color: #fff;
+  }
+  .contact-careers .card:hover {
+    background-color: var(--color-button-face);
+  }
+}

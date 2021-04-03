@@ -419,7 +419,7 @@ banner-description
 */
 @media screen and (min-width: 767px) {
   #banner-description {
-    margin-left: 15rem;
+    margin-left: 22rem;
   }
 }
 
@@ -427,19 +427,24 @@ banner-description
 banner-video
 */
 
+#banner-video {
+  text-align: right;
+  object-fit: cover;
+  height: 320px;
+}
+
 #banner-video video {
   height: 100%;
+  padding-left: 2rem;
 }
 
 @media screen and (min-width: 767px) {
   #banner-video {
-    position: relative;
-    height: 70vh;
-    overflow: unset;
+    max-width: 100%;
+    height: 700px;
   }
   #banner-video video {
-    position: absolute;
-    left: -1;
+    padding-left: 2rem;
   }
 }
 /*
@@ -614,15 +619,23 @@ our history
 */
 @media screen and (min-width: 767px) {
   #our-history {
+    grid-template-columns: 25rem 1fr 1fr;
+    grid-template-rows: auto;
     position: relative;
-    height: 60vh;
+    overflow: hidden;
+    margin-top: 8rem;
+  }
+
+  #our-history .block-hero__content {
+    grid-column: 2;
+    padding: 0;
   }
 
   #our-history .block-hero__image {
     position: absolute;
     width: 600px;
     height: 590px;
-    right: -300px;
+    right: 0;
   }
 }
 
@@ -712,22 +725,20 @@ Journal
 @media screen and (min-width: 767px) {
   .journal {
     position: relative;
-    height: 70vw;
+    padding-bottom: 8rem;
   }
 
-  .journal__content {
-  }
   .journal h2 {
     font-size: 3.4rem;
   }
   .journal__grid {
-    grid-template-columns: repeat(3, 237px);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: auto;
     gap: 2rem;
   }
   .journal__item-image img {
     height: 400px;
-    width: 237px;
+    width: 100%;
     object-fit: cover;
   }
   .journal__item-description {
@@ -768,6 +779,7 @@ contact-careers
 @media screen and (min-width: 767px) {
   .contact-careers {
     padding-top: 6rem;
+    padding-left: 10rem;
   }
   .contact-careers .card {
     width: 40rem;

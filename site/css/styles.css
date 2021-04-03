@@ -711,6 +711,13 @@ Journal
 }
 
 @media screen and (min-width: 767px) {
+  .journal {
+    position: relative;
+    height: 70vw;
+  }
+
+  .journal__content {
+  }
   .journal h2 {
     font-size: 3.4rem;
   }
